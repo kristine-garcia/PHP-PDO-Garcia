@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS video_store;
+USE video_store;
+CREATE TABLE IF NOT EXISTS movies(
+ id INT PRIMARY KEY AUTO_INCREMENT,
+ title VARCHAR(255) NOT NULL,
+ director VARCHAR (255) NOT NULL,
+ release_year INT NOT NULL,
+ available BOOLEAN NOT NULL
+);
+  
+  

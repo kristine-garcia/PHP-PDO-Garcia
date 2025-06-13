@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS company_db;
+USE company_db;
+CREATE TABLE IF NOT EXISTS timelogs(
+id INT PRIMARY KEY AUTO_INCREMENT,
+employee_name VARCHAR(255) NOT NULL,
+log_date DATE NOT NULL,
+log_time TIME NOT NULL,
+type ENUM('IN', 'OUT') NOT NULL
+
+
+);
